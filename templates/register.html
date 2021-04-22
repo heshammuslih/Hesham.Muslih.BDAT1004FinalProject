@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Enter student details:</h1>
+    <form method="POST" action="/data">
+        <table cellpadding="4" cellspacing="4" style="width: 100%;">
+            <tr>
+                <td nowrap="nowrap">
+                    <label>First Name:</label>
+                </td>
+                <td>
+                    <input name="first_name">
+                </td>
+                <td nowrap="nowrap">
+                    <label>Last Name:</label>
+                </td>
+                <td nowrap="nowrap">
+                    <input name="last_name">
+                </td>
+                <td nowrap="nowrap">
+                    <label>Student ID:</label>
+                </td>
+                <td nowrap="nowrap">
+                    <input name="student_id">
+                </td>
+                <td nowrap="nowrap">
+                    <label>Gender:</label>
+                </td>
+                <td nowrap="nowrap">
+                    <select name="gender" id="cars">
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" />
+                </td>
+            </tr>
+        </table>
+    </form>
+{% endblock content%}
